@@ -17,7 +17,6 @@ console.log('Contraseña:', VALID_PASS);
 
 // Middleware para servir archivos estáticos y parsear JSON
 app.use(cors());
-app.use(express.static('public'));
 app.use(bodyParser.json());
 
 // Ruta para manejar el login
@@ -30,6 +29,8 @@ app.post('/login', (req, res) => {
     res.json({ success: false, message: 'Credenciales incorrectas' });
   }
 });
+
+app.use(express.static('public'));
 
 // Iniciar el servidor
 app.listen(PORT, () => {
