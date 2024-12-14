@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
+const cors = require('cors');
 
 dotenv.config(); // Carga las variables de entorno
 
@@ -15,6 +16,7 @@ console.log('Usuario:', process.env.USERNAMELOG);
 console.log('Contraseña:', VALID_PASS);
 
 // Middleware para servir archivos estáticos y parsear JSON
+app.use(cors());
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
