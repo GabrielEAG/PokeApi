@@ -1,0 +1,74 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #a7c5eb, #f0f0f0);
+    background-image: url('https://i.pinimg.com/originals/f6/9b/ae/f69baeef8be43718ed2aa8facb4c5308.jpg');
+    background-size: cover; /* Esto ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+  
+  .container {
+    background: rgb(253, 240, 213);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box; /* Asegura que el padding se cuente dentro del ancho */
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: rgb(253, 240, 213);
+    box-sizing: border-box; /* Asegura que el padding no haga que el input se salga */
+    transition: border 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: rgb(120, 0, 0);
+    outline: none;
+    background-color: #ffffff;
+  }
+  
+  button {
+    padding: 12px 25px;
+    background-color: rgb(193, 18, 91);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: rgb(120, 0, 0);
+  }
+  
+  .error {
+    color: #e74c3c;
+    margin-top: 15px;
+    font-size: 14px;
+    display: block;
+  }
+  
