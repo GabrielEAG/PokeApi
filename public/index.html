@@ -17,7 +17,7 @@
     <p id="errorMessage" class="error"></p>
   </div>
 
-  <div class="image-grid" id="imageGrid" style="display: none;">
+  <!-- <div class="image-grid" id="imageGrid" style="display: none;">
     <h2>Odi amor ♡</h2>
     <div class="grid-container">
       <div class="grid-item"><img src="./srcs/Imagen de WhatsApp 2024-11-17 a las 14.47.23_f608f0ab.jpg" alt="Image 1"></div>
@@ -27,7 +27,7 @@
       <div class="grid-item"><img src="./srcs/Imagen de WhatsApp 2024-12-07 a las 20.48.11_b442d1db.jpg" alt="Image 5"></div>
       <div class="grid-item"><img src="./srcs/Imagen de WhatsApp 2024-12-07 a las 20.48.12_b91dbd2b.jpg" alt="Image 6"></div>
     </div>
-  </div>
+  </div> -->
 
   <script>
     const form = document.getElementById('loginForm');
@@ -42,9 +42,11 @@
 
       if (username === validUser && password === validPass) {
 
-        document.getElementById('loginContainer').style.display = 'none';
+        //document.getElementById('loginContainer').style.display = 'none';
 
-        document.getElementById('imageGrid').style.display = 'block';
+        //document.getElementById('imageGrid').style.display = 'block';
+
+        window.location.href = 'dashboard.html';
       } else {
         document.getElementById('errorMessage').textContent = 'Credenciales incorrectas';
       }
